@@ -13,10 +13,9 @@ public class Main
 		InetSocketAddress hostAddress = new InetSocketAddress("localhost", 6154);
 		SocketChannel client = SocketChannel.open(hostAddress);
 		ByteBuffer buffer = ByteBuffer.allocate(1024);
-		buffer.put("asdsad".getBytes());
+		buffer.put("askingForData_topics".getBytes());
 		buffer.flip();
 		client.write(buffer);
-		client.close();
 	}
 
 }
