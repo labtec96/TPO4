@@ -5,8 +5,7 @@ public class ServerMain
 
 	public static void main(String[] args)
 	{
-		GUIServer guiServer = new GUIServer();
-		guiServer.setVisible(true);
+		Server ser= new Server();
 	}
 
 }

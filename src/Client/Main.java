@@ -8,5 +8,4 @@ public class Main
 		GuiClient guiClient = new GuiClient();
 		guiClient.setVisible(true);
 	}
-
 }

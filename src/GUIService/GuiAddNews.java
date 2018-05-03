@@ -1,4 +1,4 @@
-package Server;
+package GUIService;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
@@ -14,11 +14,11 @@ import java.awt.Font;
 import javax.swing.JTextPane;
 import javax.swing.JComboBox;
 
-public class AddNews extends JDialog
+public class GuiAddNews extends JDialog
 {
 
 	private final JPanel contentPanel = new JPanel();
-	public AddNews()
+	public GuiAddNews()
 	{
 		setBounds(100, 100, 450, 300);
 		getContentPane().setLayout(new BorderLayout());
@@ -32,9 +32,9 @@ public class AddNews extends JDialog
 			contentPanel.add(lblTematNowegoNewsa);
 		}
 		{
-			JComboBox comboBox = new JComboBox();
-			comboBox.setBounds(229, 10, 151, 20);
-			contentPanel.add(comboBox);
+			JComboBox cBToDelete = new JComboBox();
+			cBToDelete.setBounds(229, 10, 151, 20);
+			contentPanel.add(cBToDelete);
 		}
 		{
 			JTextPane textPane = new JTextPane();
