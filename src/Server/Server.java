@@ -118,6 +118,30 @@ public class Server
 					writeResp(sc, tmp);
 				}
 			}
+			if (reqStringTab[0].equals("modifyTopic"))
+			{
+				if (reqStringTab[1].equals("add"))
+				{
+					String topicNameToAdd =reqStringTab[2];
+					topicMap.put(topicNameToAdd, new Topic(topicNameToAdd));
+				}
+				else if(reqStringTab[1].equals("delete"))
+				{
+					String topicNameToDelete =reqStringTab[2];
+					topicMap.remove(topicNameToDelete);
+				}
+			}
+			if (reqStringTab[0].equals("modifyNews"))
+			{
+				if (reqStringTab[1].equals("add"))
+				{
+					String topic = reqStringTab[2];
+					String text = reqStringTab[3];
+					Topic topicToAddNews = topicMap.get(topic);
+					topicToAddNews.addNews(text);
+					///Dodac wysylke do subskrybetnwo
+				}
+			}
 		}
 		sc.close();
 	}

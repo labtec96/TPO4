@@ -1,11 +1,11 @@
 package GUIService;
 
-public class ServerMain
+public class ControlPanelMain
 {
 
 	public static void main(String[] args)
 	{
-		GUIServer guiServer = new GUIServer();
+		GUIControl guiServer = new GUIControl();
 		guiServer.setVisible(true);
 	}
 

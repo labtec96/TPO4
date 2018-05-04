@@ -83,7 +83,7 @@ public class GuiClient extends JFrame
 		
 		try
 		{
-			InetSocketAddress hostAddress = new InetSocketAddress("localhost", 6154);
+			InetSocketAddress hostAddress = new InetSocketAddress(serverHost,serverPort);
 			SocketChannel client = SocketChannel.open(hostAddress);
 			ByteBuffer buffer = ByteBuffer.allocate(1024);
 			buffer.put("askingForData_topics".getBytes());
